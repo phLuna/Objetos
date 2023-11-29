@@ -1,4 +1,4 @@
-from utills import criar_aluno
+from utills import criar_aluno, adicionar_aluno
 
 espaco_de_menu1 = '=' * 15
 espaco_de_menu2 = '=-=' * 10
@@ -19,7 +19,5 @@ F: ''').upper()
         operar = input('Erro! Tente novamente: ')
     #[1] Criar.
     if operar == '1':
-        nome = input('Insira o nome: ')
-        nascimento = input('Insira o ano de nascimento: ')
-        faixa = input('Insira a faixa: ')
-        aluno = criar_aluno(nome, nascimento, faixa)
+        aluno = criar_aluno()
+        adicionar_aluno(aluno)
