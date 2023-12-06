@@ -1,6 +1,5 @@
 from datetime import datetime
 
-
 class Aluno:
     def __init__(self, nome, nascimento, faixa) -> None:
         self.nome = nome
@@ -13,5 +12,6 @@ class Aluno:
 
         idade = ano - self.nascimento
         return idade
-
-alunos = []
+    
+    def subir_faixa(self):
+        Aluno.faixa = input('Insira a nova faixa: ')

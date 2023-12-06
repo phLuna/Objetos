@@ -13,3 +13,8 @@ def adicionar_aluno(aluno):
     with open('perfis.txt', 'a') as arquivo:
         for key in range(0,3), aluno:
             arquivo.write(str(key))
+
+def ler_todos():
+    with open('perfis.txt', 'r') as arquivo:
+        for item in arquivo:
+            print(item)
