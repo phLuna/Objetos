@@ -1,4 +1,4 @@
-from utills import criar_aluno, adicionar_aluno, ler_todos
+from utills import criar_aluno, adicionar_aluno, ler_todos, atualizar_perfil()
 
 espaco_de_menu1 = '=' * 15
 espaco_de_menu2 = '=-=' * 10
@@ -31,4 +31,6 @@ F: ''').upper()
         print('-' * 15)
     #[3] Atualizar.
     if operar == '3':
+        print('-' * 15)
+        atualizar_perfil()
         print('-' * 15)

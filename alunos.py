@@ -1,7 +1,8 @@
 from datetime import datetime
 
 class Aluno:
-    def __init__(self, nome, nascimento, faixa) -> None:
+    def __init__(self, indice, nome, nascimento, faixa) -> None:
+        self.indice = indice
         self.nome = nome
         self.nascimento = nascimento
         self.faixa = faixa
