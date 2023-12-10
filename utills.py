@@ -17,13 +17,12 @@ def transformar_obj(str):
 def criar_aluno():
     with open('perfis.txt', 'r') as arquivo:
         perfis = []
-        textao = arquivo.read()
-        str(textao)
-        textao1 = arquivo.split('\n')
+        textao = str(arquivo.read())
+        textao1 = textao.split('\n')
         for i in textao1:
             perfis.append(i)
         arquivo.close()
-    indice = perfis[-1][0]
+    indice = perfis[-1][0] + 1
     nome = input('Insira o nome: ')
     nascimento = input('Insira o ano de nascimento: ')
     faixa = input('Insira a faixa: ')
@@ -33,8 +32,10 @@ def criar_aluno():
 #Adicionar ao arquivo.
 def adicionar_aluno(aluno):
     with open('perfis.txt', 'a') as arquivo:
-        for key in range(0,3), aluno:
-            arquivo.write(str(key))
+        aluno1 = str(aluno)
+        for key in aluno1, range(0, 3):
+            arquivo.write(key)
+        arquivo.write('\n')
 
 #Ler perfis.
 def ler_todos():

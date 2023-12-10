@@ -22,8 +22,7 @@ F: ''').upper()
         print('-' * 15)
         aluno = criar_aluno()
         adicionar_aluno(aluno)
-        print("""'Aluno adionado!'
-              " * 15""")
+        print('Aluno adionado!', '\n', '-' * 15)
     #[2] Ler.
     if operar == '2':
         print('-' * 15)
